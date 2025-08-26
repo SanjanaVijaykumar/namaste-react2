@@ -1,3 +1,64 @@
-#parent{
-    color: red;
+.header {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    width: 100%;
+}
+
+.nav-items {
+    font-size: 27px;
+    display: flex;
+    margin: 25px 46px 0 10px;
+}
+
+ul {list-style-type: none;}
+
+li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo-image {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.menu-image {
+    width: 223px;
+    height: 130px;
+}
+
+.menu-card {
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    width: 225px;
+    height: 350px;
+    margin: 5px;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.outer-menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 15px;
+}
+
+.menu-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+
+.login{
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
 }
