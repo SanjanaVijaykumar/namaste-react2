@@ -41,7 +41,7 @@ const HeaderComponent = () => {
         </div>
         <div className="nav-bar">
             <ul className="nav-items">
-                <li>Online Status: {isOnline === true ? "🟢" : "🔴"} {isOnline}</li>
+                <li>Online Status: {isOnline ? "🟢" : "🔴"}</li>
                 <li onClick={() => navigation('home')}>Home</li>
                 <li onClick={()=>navigation('about')}>About Us</li>
                 <li onClick={()=>navigation('contact')}>Contact Us</li>
