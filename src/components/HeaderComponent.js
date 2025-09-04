@@ -29,31 +29,37 @@ const HeaderComponent = () => {
                         break;
             case 'settings':navigate('/home/settings');
                         break;
+             case 'grocery':navigate('/grocery');
+                        break;
 
             case 'default' : navigate('page');
                              break;
         }   
     }
 
-    return (<div className="header">
+    return (
+    <div className="header">
         <div className="logo">
             <img src={icon} alt="logo" className="logo-image" onClick={()=>navigation('image')}/>
         </div>
         <div className="nav-bar">
             <ul className="nav-items">
                 <li>Online Status: {isOnline ? "🟢" : "🔴"}</li>
-                <li onClick={() => navigation('home')}>Home</li>
+                {/* <li onClick={() => navigation('home')}>Home</li> */}
                 <li onClick={()=>navigation('about')}>About Us</li>
                 <li onClick={()=>navigation('contact')}>Contact Us</li>
                 <li onClick={()=>navigation('cart')}>Cart</li>
-                <li onClick={() => navigation('profile')}>Profile</li>
-                <li onClick={() => navigation('settings')}>Settings</li>
+                {/* <li onClick={() => navigation('profile')}>Profile</li> */}
+                {/* <li onClick={() => navigation('settings')}>Settings</li> */}
+                <li onClick={() => navigation('grocery')}>Grocery</li>
                 <button className='login' onClick={()=>{
                     btnName == 'Login' ? setBtnName("LogOut") : setBtnName("Login");
                 }}>{btnName}</button>
             </ul>
         </div>
-    </div>)
+    </div>
+    
+)
 };
 
 export default HeaderComponent;
